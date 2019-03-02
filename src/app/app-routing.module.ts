@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IndexHomeComponent } from "./component/index/index-home/index-home.component";
 import { HomeComponent } from "./component/view/home/home.component";
 import { DetalleComponent } from "./component/view/detalle/detalle.component";
+import { CheffComponent } from "./component/view/cheff/cheff/cheff.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,13 @@ const routes: Routes = [
     children:[
       {path:'home', redirectTo:'/home/detalle', pathMatch:'full'},
       {path:'detalle', component:DetalleComponent}
+    ], component: IndexHomeComponent
+  },
+  {
+    path:'home',
+    children:[
+      {path:'home', redirectTo:'/home/cheff', pathMatch:'full'},
+      {path:'cheff', component:CheffComponent}
     ], component: IndexHomeComponent
   }
 ];
