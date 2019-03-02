@@ -1,16 +1,31 @@
 <div class="box" *ngFor="let plato of recipes">
   <div  *ngIf="plato.name === name_plato1">
+      <div class="imagen"><img src="{{plato.image}}" alt="{{plato.name}}"> </div>
 <div>
   <h3>{{plato.name}} </h3>
 </div>
-<div>Foto: <img src="{{plato.image}}" alt="{{plato.name}}"> </div>
-<div>Descripcion: {{plato.description}}</div>
-<div *ngFor="let ingredient of plato.ingredient">
-  <div>amount: {{ingredient.amount}}</div> 
-  <div>unit: {{ingredient.amount}}</div> 
-  <div>name: {{ingredient.name}}</div> 
-  <div>preparation: {{ingredient.preparation}}</div>
-</div> 
+ 
+    <div class="descripcion">Descripcion: {{plato.description}}</div>
+      <div class="table-responsive">
+      <table class="table" >
+      <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Unidad</th>
+        <th>Preparacion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ingredient of plato.ingredient">
+        <td>{{ingredient.name}}</td>
+        <td>{{ingredient.amount}}</td>
+        <td>{{ingredient.unit}}</td>
+        <td>{{ingredient.preparation}}</td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
 <div>Proceso de preparacion: </div>
 <div>Tag: {{plato.tag}}</div>
 <div>Notes: {{plato.notes}}</div>

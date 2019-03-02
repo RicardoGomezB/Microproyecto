@@ -1,4 +1,32 @@
+.box{
+    text-align: center;
+    width: 80%;
+}
+
+table{
+text-align: right;
+
+}
+
+.imagen{
+text-align: center;
+padding: 5px;
+margin: 10px;
+
+}
 img{
     width: 300px;
     height: 300px;
+}
+
+table{
+    background-color: rgb(253, 199, 177);
+    text-align: center;
+}
+h3{
+
+}
+
+.descripcion{
+    color: gray;
 }
