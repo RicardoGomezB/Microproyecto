@@ -1,0 +1,15 @@
+<div class="box" *ngFor="let plato of recipes">
+  <div  *ngIf="plato.name === name_plato1">
+<div>
+  <h3>{{plato.name}} </h3>
+</div>
+<div>Foto: <img src="{{plato.image}}" alt="{{plato.name}}"> </div>
+<div>Descripcion: {{plato.description}}</div>
+<div>Ingredientes: {{plato.ingredients}}</div>
+<div>Proceso de preparacion: </div>
+<div>Tag: {{plato.tag}}</div>
+
+
+</div>
+</div>
+
