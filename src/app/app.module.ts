@@ -10,7 +10,8 @@ import { IndexHomeComponent } from './component/index/index-home/index-home.comp
 import { DetalleComponent } from './component/view/detalle/detalle.component';
 import { HomeComponent } from './component/view/home/home.component';
 import { CheffComponent } from './component/view/cheff/cheff/cheff.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { ProfileComponent } from './component/profile/profile.component';
+
 
 @NgModule({
   declarations: [

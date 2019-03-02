@@ -4,6 +4,7 @@
 <div>
   <h3>{{plato.name}} </h3>
 </div>
+<<<<<<< HEAD
  
     <div class="descripcion">Descripcion: {{plato.description}}</div>
       <div class="table-responsive">
@@ -26,6 +27,16 @@
       </tbody>
       </table>
       </div>
+=======
+<div>Foto: <img src="{{plato.image}}" alt="{{plato.name}}"> </div>
+<div>Descripcion: {{plato.description}}</div>
+<div *ngFor="let ingredient of plato.ingredient">
+  <div>amount: {{ingredient.amount}}</div> 
+  <div>unit: {{ingredient.unit}}</div> 
+  <div>name: {{ingredient.name}}</div> 
+  <div>preparation: {{ingredient.preparation}}</div>
+</div> 
+>>>>>>> 9873043f41cacc6b8b1b5a1928d7957632ad3c42
 <div>Proceso de preparacion: </div>
 <div>Tag: {{plato.tag}}</div>
 <div>Notes: {{plato.notes}}</div>
