@@ -20,13 +20,29 @@ img{
 }
 
 table{
-    background-color: rgb(253, 199, 177);
+    background-color: rgb(245, 170, 30);
     text-align: center;
 }
-h3{
+table :hover{
+    background-color: darkgray;
 
+}
+h3{
+font-size: 30px;
 }
 
 .descripcion{
     color: gray;
+}
+th{
+    font-size: 20px;
+}
+.resto{
+    margin-top: 5px;
+    text-align: justify;
+}
+.table-responsive{
+    padding-left: 10%;
+    margin: 10px;
+
 }
