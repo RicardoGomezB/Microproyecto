@@ -5,11 +5,16 @@
 </div>
 <div>Foto: <img src="{{plato.image}}" alt="{{plato.name}}"> </div>
 <div>Descripcion: {{plato.description}}</div>
-<div>Ingredientes: {{plato.ingredients}}</div>
+<div *ngFor="let ingredient of plato.ingredient">
+  <div>amount: {{ingredient.amount}}</div> 
+  <div>unit: {{ingredient.amount}}</div> 
+  <div>name: {{ingredient.name}}</div> 
+  <div>preparation: {{ingredient.preparation}}</div>
+</div> 
 <div>Proceso de preparacion: </div>
 <div>Tag: {{plato.tag}}</div>
-
-
+<div>Notes: {{plato.notes}}</div>
+<div>Forked: {{plato.forked}}</div>
 </div>
 </div>
 
